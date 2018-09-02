@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Enzo-J/spring-cloud-sell/config-repo.git
+          username: 1967678755
+          password: desuotuo.520
+          basedir: F:\java-project\spring-cloud-demo\spring-cloud-sell\spring-cloud-sell\config-repo
+#          basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      expose: "*"
